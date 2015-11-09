@@ -81,6 +81,7 @@ import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.WriteSettingsDetails;
 import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
+import com.android.settings.candy.MainSettings;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -287,6 +288,7 @@ public class SettingsActivity extends Activity
             R.id.print_settings,
             R.id.nfc_payment_settings,
             R.id.home_settings,
+            R.id.main_settings,
             R.id.dashboard,
             R.id.privacy_settings_cyanogenmod
     };
@@ -365,7 +367,9 @@ public class SettingsActivity extends Activity
             WriteSettingsDetails.class.getName(),
             LiveDisplay.class.getName(),
             com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
-            BlacklistSettings.class.getName()
+            BlacklistSettings.class.getName(),
+	    MainSettings.class.getName(),
+            com.android.settings.cyanogenmod.PrivacySettings.class.getName()
     };
 
 
