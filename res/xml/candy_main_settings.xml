@@ -38,14 +38,9 @@
                 />
 
         <!-- slim lockscreen settings -->
-        <PreferenceCategory
-                android:key="locksystem_category"
-                android:title="@string/lockscreen_shortcuts_category">
-
         <PreferenceScreen
                 android:key="lockscreen_shortcuts"
                 android:fragment="com.android.settings.slim.dslv.ActionListViewSettings"
-                android:summary="@string/lockscreen_shortcuts_summary"
                 android:title="@string/lockscreen_shortcuts_title">
                 <extra android:name="actionMode" android:value="4" />
                 <extra android:name="maxAllowedActions" android:value="5" />
@@ -54,11 +49,10 @@
                 <extra android:name="fragment" android:value="com.android.settings.slim.fragments.LockscreenShortcutFragment" />
         </PreferenceScreen>
 
-         <!-- Multiwindow -->
-         <PreferenceScreen
+        <!-- Multiwindow -->
+        <PreferenceScreen
                 android:key="multitwindow"
                 android:fragment="com.android.settings.candy.fragments.MultiWindow"
-                android:layout="@layout/preference_multiwindow"
                 android:title="@string/multiwindow_settings_title" 
                 />
   
